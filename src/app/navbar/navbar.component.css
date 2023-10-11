@@ -1,0 +1,58 @@
+.navbar i {
+   color: var(--secondry-color);
+   transition: transform 0.5s;
+   /* font-size: 1.5rem; */
+}
+
+.navbar i:hover {
+   color: white;
+   transform: scale(1.1);
+}
+
+.logo {
+   width: 150px;
+}
+
+.noOFCart {
+   position: absolute;
+   background-color: white;
+   color: var(--secondry-color);
+   top: -15px;
+   right: -14px;
+}
+
+.heart {
+   color: red !important;
+}
+
+.navbar {
+   clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
+   background-color: black;
+
+
+}
+
+.nav-link {
+   color: white;
+}
+
+
+.active {
+   color: var(--secondry-color) !important;
+   transition: all 0.5s;
+
+}
+
+.navbar-toggler {
+   color: transparent;
+}   
+.border-end {
+border-right: 2px solid rgb(172, 172, 172);
+}
+@media screen and (max-width:992px) {
+   .ulMedia {
+      display: flex;
+      flex-direction: row;
+      margin: 0 !important;
+   }
+}

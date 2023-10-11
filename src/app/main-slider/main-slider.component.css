@@ -1,0 +1,18 @@
+.main{
+
+    /* background-image: url("./assets/images/img-main-slider/portfolio-9.jpg"); */
+    /* background-image: url(./assets/images/img-main-slider/banner-bg.png ); */
+    /* background-image: url(assets/images/img-main-slider/banner-bg.png); */
+   background-position: center;
+   background-size: cover;
+    /* background-color: red;  */
+ height: 100vh;
+}
+button{
+    padding: 10px 30px;
+}
+.slider{
+    position: absolute;
+    bottom: 5%;
+    left:7%;
+}

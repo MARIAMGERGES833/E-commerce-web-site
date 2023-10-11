@@ -1,0 +1,119 @@
+.item {
+    transition: all 0.7s;
+    position: relative;
+    overflow: hidden;
+}
+
+.item:hover {
+    box-shadow: 0 0 5px 1px rgb(189, 189, 189);
+}
+
+.brand {
+    background-color: var(--secondry-color);
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: -75px;
+    top: 30px;
+    transform: rotate(-40deg);
+    z-index: 55;
+}
+
+a {
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+.btnCart {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.item:hover .btnCart {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+}
+
+.spanCat {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    color: black;
+    display: block;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.56);
+}
+
+.titleDots {
+    float: left;
+    font-family: Arial;
+    margin: 5px 0;
+    padding: 1%;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    height: fit-content;
+    text-overflow: ellipsis;
+    transition-delay: 1s;
+}
+
+.item:hover .titleDots {
+    float: none;
+    width: fit-content;
+    overflow: visible;
+    white-space: wrap;
+    transition-delay: 1s;
+
+}
+
+.heart {
+    width: fit-content;
+    display: block;
+}
+
+.heart:hover {
+    transform: scale(1.1);
+}
+
+.div-heart {
+    cursor: pointer;
+}
+.heart i {
+    font-size: 20px;
+}
+.btnprime{
+    background-color:transparent !important;
+    border-color:transparent !important;
+    padding: 0;
+}
+.p-button:focus{
+    border-color:transparent !important;
+    box-shadow:none  !important;
+}
+
+@media screen and (max-width : 768px) {
+    .brand {
+        height: 50px;
+        font-size: 30px !important;
+        left: -150px;
+        top: 90px;
+    }
+
+    .item .titleDots {
+        float: none;
+        width: fit-content;
+        overflow: visible;
+        white-space: wrap;
+
+    }
+}

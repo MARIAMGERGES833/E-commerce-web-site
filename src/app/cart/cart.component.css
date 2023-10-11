@@ -1,0 +1,32 @@
+.img{
+    width: 70px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.row{
+    transition: all 0.5s;
+}
+.row:hover{
+    box-shadow: 0 0 5px 1px rgb(189, 189, 189);
+}
+.btnCount{
+    border: 2px solid #ED6D23;
+    padding: 5px 10px;
+    color: #ED6D23 ;
+}
+.btnCount:hover{
+    background-color: #ED6D23;
+    color: white;
+}
+.emptyCart{
+filter: drop-shadow(0 0 20px #3AAB58);
+
+width: 70%;
+}
+.btnPay:hover {
+    color:  var(--main-color);
+    border-color: var(--main-color);
+}
+.btnAddItems{
+    border-color: var(--secondry-color);
+}

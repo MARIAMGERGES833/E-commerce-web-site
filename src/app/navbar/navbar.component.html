@@ -1,0 +1,55 @@
+
+<nav class="navbar navbar-expand-lg boxShadow fixed-top navbar-dark container px-3">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo-main.png" alt="logo of fresh cart"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 "  *ngIf="isLogin">
+          <li  class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="home" routerLinkActive="active" >Home</a>
+          </li>
+          <li  class="nav-item">
+            <a class="nav-link" routerLink="cart" routerLinkActive="active" >Cart</a>
+          </li>
+          <li  class="nav-item">
+            <a class="nav-link" routerLink="prodnav" routerLinkActive="active" >Products</a>
+          </li>
+          <li  class="nav-item">
+            <a class="nav-link" routerLink="categorynav" routerLinkActive="active" >Category</a>
+          </li>
+          <li  class="nav-item">
+            <a class="nav-link" routerLink="brandsnav" routerLinkActive="active" >Brands</a>
+          </li>
+ 
+      
+        </ul>
+
+        <div class="d-flex align-items-center justify-content-center ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ulMedia border-end pe-2" *ngIf="isLogin">
+            <li class="nav-item me-2"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="nav-item me-2"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="nav-item me-2"><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li class="nav-item me-2 border-end pe-2"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item me-3 position-relative"><a href="/cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div class="badge noOFCart">{{numOfCartItems}}</div>
+            </a></li>
+            <li class="nav-item me-3 position-relative "><a href="/wishList" >
+              <i class="fa-solid fa-heart   heart"></i>
+              <div class="badge text-danger noOFCart ">{{numOfWishesItems}}</div>
+            </a></li>
+                            </ul>
+                  
+  
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li *ngIf="!isLogin" class="nav-item"><a routerLink="signin" class="nav-link" >Login</a></li>
+              <li *ngIf="!isLogin" class="nav-item"><a routerLink="signup" class="nav-link" >Signup</a></li>
+              <li (click)="logOut()" *ngIf="isLogin" class="nav-item"><a routerLink="logout" class="nav-link" >Log Out <i class="fa-solid fa-right-from-bracket text-white ms-1"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+ 

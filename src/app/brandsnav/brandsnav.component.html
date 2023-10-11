@@ -1,0 +1,11 @@
+<div  class="container paddingTop ">
+    <div class="row g-5">
+        <div class="col-md-3 brandImg"  *ngFor="let brand of brandImg">
+            <a [routerLink]="['/brandDetails',brand._id]" (click)="getBrandDetails(brand._id)">
+
+            <img class="imgBrand boxShadow w-100" [src]="brand.image"/>
+           </a>
+        </div>
+ 
+    </div>
+</div>

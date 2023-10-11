@@ -1,0 +1,20 @@
+.form-control:focus {
+    color: var(--secondry-color);
+    background-color: transparent;
+    border-color: var(--main-color);
+    outline: 0;
+    box-shadow: 0 0 5px 2px rgb(205, 205, 205);
+}
+
+.form-control {
+    width: 50%;
+    color: var(--secondry-color);
+    background-color: transparent;
+    border-color: var(--main-color);
+    outline: 0;
+    /* box-shadow: 0 0 5px 2px rgb(205, 205, 205); */
+}
+
+::placeholder {
+    color: var(--secondry-color) !important;
+}

@@ -1,0 +1,15 @@
+<div class="w-50 mx-auto py-4 container paddingTop my-5">
+
+   <form [formGroup]="shippingForm" (ngSubmit)="handleOnPay()">
+    <label class="mb-2" for="details">Details</label>
+    <input type="text" class="form-control mb-2" id="details" formControlName="details">
+
+    <label class="mb-2" for="phone">Phone</label>
+    <input type="tel" class="form-control mb-2" id="phone" formControlName="phone">
+
+    <label class="mb-2" for="city">City</label>
+    <input type="text" class="form-control mb-2" id="city" formControlName="city">
+
+    <button class="btn bg-main w-100">Pay</button>
+   </form>
+</div>

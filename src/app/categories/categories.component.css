@@ -1,0 +1,17 @@
+img{  
+    transition:all 0.5s;
+    border-top-left-radius: 30px ;
+    border-bottom-right-radius: 30px ;
+    transition: all 0.5s;
+    /* filter:grayscale(100%) */
+}
+img:hover{
+    box-shadow: 0 2px 5px 2px rgb(162, 162, 162);
+    cursor:pointer;
+
+    /* filter:grayscale(0) */
+    
+}
+.image:hover+.text{
+    color:var(--secondry-color);
+}

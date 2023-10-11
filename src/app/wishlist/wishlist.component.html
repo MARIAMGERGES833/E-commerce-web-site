@@ -1,0 +1,19 @@
+<div class="container paddingTop">
+    <div class="row text-center" *ngIf='isItemWished ;else noItems'>
+        <div class="col-md-2 product mx-auto mb-4" *ngFor="let product of wishList">
+          <div class="breakHeart py-1">
+              <i (click)="removeWishList(product.id)" class="fa-solid fa-heart-crack"></i>
+          </div>
+          <img  [src]="product.imageCover" class="w-100 mb-2"/>
+          <h3 class="fs-5 text-main titleDots">{{product.title}}</h3>
+          <p>{{product.price}} EGP</p>
+      </div>
+  </div>
+  
+  
+  <ng-template #noItems>
+      <div class="w-70 text-center my-5">
+          <img class="w100" src="https://www.shopperswarehouse.com/assets/e_website/assets/site_image/empty_wishlist.png"/>
+         </div>
+  </ng-template>
+</div>

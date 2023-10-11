@@ -1,0 +1,41 @@
+.breakHeart{
+    color:red;
+}
+.product{
+    transition: all 0.5s;
+}
+.product:hover{
+    box-shadow: 0 0 5px 2px rgb(205, 205, 205);
+}
+.titleDots{
+    float: left;
+    font-family: Arial;
+    margin: 5px 0;
+    padding: 1%;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    height: fit-content;
+    text-overflow: ellipsis;
+    }
+   
+    .product:hover .titleDots{
+        float: none;
+        width: fit-content;
+        overflow: visible;
+        white-space: wrap;
+    }
+    p{
+        clear:both;
+    }
+
+    @media screen and (max-width : 768px) {
+        
+         .titleDots {
+            float: none;
+            width: fit-content;
+            overflow: visible;
+            white-space: wrap;
+    
+        }
+    }

@@ -1,0 +1,54 @@
+<div class="container">
+ 
+  <div class="row gy-3 py-3">
+    
+
+    <div class="col-lg-3 col-md-4 item pt-2"  *ngFor="let product of products | search : searchKey">
+
+      <div class="div-heart mb-1">
+        <p-toast></p-toast>
+        <button type="button" pButton pRipple  
+          class="heart ms-auto btnprime d-flex justify-content-center">
+          <i  (click)="addWishList(product.id, $event)" 
+          class=" fa-solid fa-heart  text-main" 
+          [ngClass]="{'text-danger' : addIdHeart.join(' ').includes(product.id)}"></i></button>
+    
+  
+         </div>
+
+
+      <a [routerLink]="['/productDetails',product.id]">
+
+      <div class="brand font-sm text-center">{{product.brand.name}}</div>
+      <div class="picture position-relative ms-1 ">
+        <img class="w-100 mb-2" [src]="product.imageCover" alt="picture of product" />
+        <div class="spanCat d-flex align-items-center justify-content-between px-1">
+          <span class="font-sm ">{{product.category.name}}</span> 
+
+        
+        </div>
+      </div>
+
+      <h2 class="h5 text-main fw-bolder titleDots">{{product.title}}</h2>
+
+
+      <div class="d-flex align-items-center justify-content-between clear">
+        <span class="fw-bold font-sm  text-secondry">{{product.price}} EGP</span>
+        <div> 
+               <!-- <i class="fa-regular fa-heart heart me-1"></i> -->
+
+            <i class="fas fa-star rating-color me-1"></i>
+            <span class="fw-bold font-sm ">{{product.ratingsAverage}}</span>
+        </div>
+    
+    </div>
+ </a>
+
+
+ <p-toast></p-toast>
+    <button type="button" pButton pRipple  (click)="addToCart(product.id)"  class="p-button-success w-100 text-white my-2 btnCart d-flex justify-content-center"><i class="fa-solid fa-cart-shopping"></i></button>
+
+    </div>
+</div>
+</div>
+<!-- </div> -->

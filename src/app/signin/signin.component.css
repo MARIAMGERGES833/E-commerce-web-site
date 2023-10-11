@@ -1,0 +1,59 @@
+p{
+    margin-bottom: 0;
+    font-size: .875rem;
+}
+
+button:hover{
+border: solid 3px var(--secondry-color);
+}
+.contain{
+    width: 50%;
+    margin: auto;
+    /* border: 3px rgb(181, 180, 180) solid; */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    padding: .625rem;
+    position: relative;
+    overflow: hidden;
+
+}
+.back{
+  background-image: linear-gradient(30deg, #222222, #080808);
+  border-radius: 1rem;
+padding: 1rem;
+
+}
+.contain::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    transform: scale(2) translate(-50%, -50%);
+    scale: 1.1;
+    background-image: conic-gradient(transparent, var(--secondry-color));
+    animation: spinning 7s infinite linear;
+    z-index: -1;
+    border-radius: inherit;
+  }
+  
+  @keyframes spinning {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(45deg);
+    }
+    75% {
+      transform: rotate(315deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .form-control:focus {
+    
+    border-color:var(--secondry-color);
+    box-shadow:none;
+    }

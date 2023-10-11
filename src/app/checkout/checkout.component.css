@@ -1,0 +1,14 @@
+.form-control{
+    background-color: transparent;
+    border: 1px solid var(--main-color)!important;
+    color: var(--secondry-color)!important;
+}
+.form-control:focus{
+    background-color: transparent;
+    border: 1px solid var(--main-color)!important;
+    color: var(--secondry-color)!important;
+    box-shadow: 0 0 0.3rem 0.2rem rgb(207, 206, 206);
+}
+button:hover{
+    border: var(--main-color) solid 3px;
+}

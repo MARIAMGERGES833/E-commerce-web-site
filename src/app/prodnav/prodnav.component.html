@@ -1,0 +1,7 @@
+<div class="products container paddingTop">
+
+    <div class="mb-4">
+        <input [(ngModel)]="searchKey" type="text" placeholder="Search ....." class="form-control mx-auto" />
+      </div>
+</div>
+<app-products [searchKey]="searchKey"></app-products>

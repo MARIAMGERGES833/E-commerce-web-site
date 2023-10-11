@@ -1,0 +1,12 @@
+<div class="container paddingTop">
+    <div class="row g-3">
+        <div class="col-md-4" *ngFor="let category of allCategory">
+            <div class="item position-relative">
+                <img class="mb-2 image" height="350" [src]="category.image" />
+                <div class="layer d-flex align-items-center justify-content-center">
+                    <h3 class="h5 fw-bolder text">{{category.name}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
